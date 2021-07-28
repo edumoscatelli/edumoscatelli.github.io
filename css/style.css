@@ -1,0 +1,574 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+body,
+input,
+a,
+ul,
+li {
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    margin-top: 8px;
+    max-width: 462px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #8899ad;
+}
+
+p {
+    color: #000A12;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+.hero-find {
+    background: white url("/img/radar.svg") no-repeat center / auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 160px;
+}
+
+.field-find {
+    height: 56px;
+    padding: 8px 16px;
+    border-radius: 4px 0 0 4px;
+    border: solid 1px #778F9B;
+    color: #000A12;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+.field-find:focus {
+    border: 1px solid #0068FF;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 10px rgba(114, 30, 255, 0.1);
+}
+
+.btn-find {
+    height: 56px;
+    padding: 0 24px;
+    background-color: #0068ff;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-find:hover {
+    background-color: #0053CC;
+}
+
+.group-find {
+    width: 600px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.results-found {
+    margin: 24px;
+    color: #000A12;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/*TABLE -------------------------------*/
+
+table {
+    width: 864px;
+    border: 1px solid #D3DCE6;
+    box-shadow: 0px 3px 10px rgba(114, 30, 255, 0.1);
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: collapse;
+    position: relative;
+}
+
+th {
+    color: #778F9B;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+td {
+    border-top: 1px solid #D3DCE6;
+}
+
+table th:hover,
+table th:focus {
+    color: #586F7B;
+}
+
+table th,
+table td {
+    padding: 1em 0.5em;
+    position: relative;
+}
+
+table span {
+    position: relative;
+}
+
+/* Arrows */
+
+table th span:after,
+table th span:before {
+    border: 0.40rem solid transparent;
+    content: '';
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: -1.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: border-color 0.2s ease-in-out;
+}
+
+table th span:before {
+    border-bottom-color: #778F9B;
+    border-top: 0;
+    margin-top: -0.40rem;
+}
+
+table th span:after {
+    border-bottom: 0;
+    border-top-color: #778F9B;
+    margin-top: 0.4rem;
+}
+
+table th span:hover:before,
+table th span:focus:before {
+    border-bottom-color: #475C66;
+}
+
+table th span:hover:after,
+table th span:focus:after {
+    border-top-color: #475C66;
+}
+
+/* table th span[aria-sort="ascending"],
+table th span[aria-sort="descending"] {
+    color: #fddc32;
+}
+
+table th span[aria-sort="ascending"]:before {
+    border-bottom-color: #a2ed56;
+}
+
+table th span[aria-sort="ascending"]:after {
+    border-top-color: rgba(255, 255, 255, 0.25);
+}
+
+table th span[aria-sort="descending"]:before {
+    border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+table th span[aria-sort="descending"]:after {
+    border-top-color: #fd6470;
+} */
+
+tfoot td:nth-child(1) {
+    padding-bottom: 32px;
+    border: none;
+}
+
+.col-interest {
+    padding: 24px 32px;
+    width: 35%;
+}
+
+.col-interest p {
+    font-weight: bold;
+}
+
+.tag-audience {
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.col-audience {
+    padding: 24px 32px;
+    width: 25%;
+}
+
+.col-category {
+    padding: 24px 32px;
+    width: 35%;
+}
+
+.positive {
+    color: #1A9C69;
+    background-color: #DEF8EE;
+}
+
+.positive::before {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    content: '';
+    background-image: url(/img/positive-icon.svg);
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    padding-right: 8px;
+}
+
+.tag-audience.positive:hover,
+.tag-audience.neutral:hover,
+.tag-audience.negative:hover {
+    cursor: default;
+}
+
+.negative {
+    color: #C24F4F;
+    background-color: #FEE8E8;
+}
+
+.negative::before {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    content: '';
+    background-image: url(/img/negative-icon.svg);
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    padding-right: 8px;
+}
+
+.neutral {
+    color: #CCA442;
+    background-color: #FFF8E5;
+}
+
+.neutral::before {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    content: '';
+    background-image: url(/img/neutral-icon.svg);
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    padding-right: 8px;
+}
+
+.load-more {
+    text-align: center;
+}
+
+.load-more::after {
+    position: absolute;
+    bottom: 1px;
+    left: 4px;
+    right: 0;
+    height: 200px;
+    width: 99%;
+    content: "";
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 90%);
+    z-index: 0;
+}
+
+.btn-loadmore {
+    position: relative;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #0068ff;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #0068ff;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-loadmore:hover {
+    border: 1px solid #0053CC;
+    background-color: #FAF4F4;
+    color: #0053CC;
+}
+
+/*FIM TABLE ---------------------*/
+
+/*Popover Styling ------------*/
+
+/*Headings*/
+
+.popover-positive h3 {
+    color: #22CE8B;
+}
+
+.popover-neutral h3 {
+    color: #FFCD53;
+}
+
+.popover-negative h3 {
+    color: #F46363;
+}
+
+/*base popover*/
+
+.popover {
+    padding: 8px;
+    max-width: 240px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+.popover>p {
+    margin-top: 4px;
+    color: white;
+}
+
+/*Fim Popover Styling ----------*/
+
+/*Anúncio Wisely ---------------*/
+
+.ad-wisely-bg {
+    background: linear-gradient(243.1deg, #17BAF7 -16.58%, #A000FF 71.35%);
+    border-radius: 8px;
+    margin: 56px auto 56px auto;
+    max-width: 1008px;
+}
+
+.ad-wisely-items {
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+.ad-wisely-items>div {
+    align-self: flex-start;
+    flex: 1 1 444px;
+}
+
+.ad-wisely-items img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.eyebrown {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.eyebrown::before {
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    left: -4px;
+    content: '';
+    background-image: url(/img/eyebrown-ray.svg);
+    background-repeat: no-repeat;
+    height: 24px;
+    width: 24px;
+    padding-right: 4px;
+}
+
+.ad-info h2 {
+    margin-top: 16px;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.ad-info {
+    padding: 56px;
+    color: white;
+    flex: 1 1 304px;
+}
+
+.ad-info>p {
+    margin-top: 8px;
+    color: white;
+}
+
+.cta-wisely {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 18px 24px;
+    background-color: white;
+    color: #0068ff;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.cta-wisely:hover{
+    background-color: #FAF4F4;
+    color: #0053CC;
+}
+
+/*Fim anúncio Wisely -----------*/
+
+/* Footer ----------------------*/
+
+.footer-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #bbc5d1;
+    padding-top: 16px;
+    margin-bottom: 32px;
+}
+
+.signature {
+    display: flex;
+    gap: 8px;
+}
+
+.signature span {
+    align-self: center;
+    font-size: 0.75rem;
+    color: #0068ff;
+}
+
+.social-media {
+    display: flex;
+    gap: 24px;
+}
+
+/* Fim Footer -----------------*/
+
+@media only screen and (max-device-width: 960px) {
+    /*Hero --------------*/
+    .hero-find {
+        margin-top: 24px;
+        padding: 24px;
+        background: white url("/img/radar.svg") no-repeat top center / auto;
+    }
+    .logo {
+        margin-top: 80px;
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    .group-find {
+        max-width: fit-content;
+        display: block;
+    }
+    .field-find {
+        width: 100%;
+        border-radius: 4px;
+    }
+    .btn-find {
+        width: 100%;
+        margin-top: 8px;
+        border-radius: 4px;
+    }
+    .results {
+        margin: 24px;
+    }
+    .results-found {
+        font-size: 1rem;
+    }
+    /* Fim Hero --------------*/
+    /* Table -----------------*/
+    table {
+        width: 100%;
+    }
+    table span {
+        position: static;
+    }
+    table th span:after,
+    table th span:before {
+        right: 1.5rem;
+    }
+    td {
+        border: none;
+    }
+    table td::before {
+        content: attr(data-label);
+        /* float: left; */
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #778F9B;
+        text-transform: uppercase;
+    }
+    table th:first-child,
+    th:last-child {
+        padding: 24px;
+    }
+    .tag-audience {
+        width: fit-content;
+        display: block;
+        margin-top: 4px;
+    }
+    .col-interest {
+        display: block;
+        padding: 24px 24px 8px 24px;
+        width: 100%;
+    }
+    .col-audience {
+        display: block;
+        padding: 8px 24px;
+        width: 100%;
+    }
+    .col-category {
+        display: block;
+        padding: 8px 24px 24px 24px;
+        width: 100%;
+        border-bottom: 1px solid #D3DCE6;
+    }
+    /* Fim Table -----------------*/
+    /*Anúncio Wisely -------------*/
+    .ad-wisely-bg {
+        margin: 24px;
+    }
+    .ad-info {
+        padding: 24px;
+    }
+    .ad-info h2 {
+        font-size: 1.5rem;
+    }
+    /*Fim Anúncio Wisely -------------*/
+    /* Footer ------------------------*/
+    footer {
+        margin-top: 40px;
+    }
+    .footer-items {
+        margin: 64px 24px 64px 24px;
+        flex-direction: column;
+    }
+    .signature {
+        margin-top: 16px;
+        flex-direction: column;
+    }
+    .social-media {
+        margin-top: 32px;
+        gap: 48px;
+    }
+    /* Fim Footer --------------------*/
+}

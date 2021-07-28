@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audience Seeker by Wisely</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.9.1/jquery.tablesorter.min.js">
+        </script>
+
+    <script>
+        $(function () {
+            $('#interest-table').tablesorter();
+        });
+
+    </script>
+</head>
+
+<body>
+    <main>
+        <section class="hero-find container">
+            <div class="logo">
+                <img src="/img/logo.svg" alt="">
+            </div>
+            <h1>Descubra infinitos interesses para segmentar a sua audiência no FacebookAds.</h1>
+            <div class="group-find">
+                <input id="field-find" class="field-find" type="search" placeholder="Digite o interesse...">
+                <button id="btn-find" class="btn-find" type="button" autofocus>Explorar</button>
+
+            </div>
+        </section>
+        <section class="results container">
+            <p class="results-found">255 interesses encontrados! Divirta-se! &#x1f609</p>
+            <table id="interest-table" class=" tablesorter">
+                <thead>
+                    <th class="col-interest"><span>INTERESSE</span></th>
+                    <th class="col-audience"><span>PÚBLICO</span></th>
+                    <th class="col-category"><span>CATEGORIA</span></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="INTERESSE" class="col-interest">
+                            <p>Produto (negócios)</p>
+                        </td>
+                        <td data-label="PÚBLICO" class="col-audience"><span class="tag-audience positive"
+                                data-title="Teste">10.500</span>
+                        </td>
+                        <td data-label="CATEGORIA" class="col-category">
+                            <p>Negócios e indústria, Publicidade online</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="INTERESSE" class="col-interest">
+                            <p>Produto (negócios)</p>
+                        </td>
+                        <td data-label="PÚBLICO" class="col-audience"><span class="tag-audience neutral">78.000</span>
+                        </td>
+                        <td data-label="CATEGORIA" class="col-category">
+                            <p>Negócios e indústria, Publicidade online</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="INTERESSE" class="col-interest">
+                            <p>Produto (negócios)</p>
+                        </td>
+                        <td data-label="PÚBLICO" class="col-audience"><span
+                                class="tag-audience negative">850.000.000</span>
+                        </td>
+                        <td data-label="CATEGORIA" class="col-category">
+                            <p>Negócios e indústria, Publicidade online</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="INTERESSE" class="col-interest">
+                            <p>Distribuição</p>
+                        </td>
+                        <td data-label="PÚBLICO" class="col-audience"><span class="tag-audience negative">754.000</span>
+                        </td>
+                        <td data-label="CATEGORIA" class="col-category tooltip">
+                            <p>On-line, Outros interesses</p>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot id="footer-table" class="load-more">
+                    <tr>
+                        <td colspan="3">
+                            <button id="btn-loadmore" class="btn-loadmore">VER MAIS INTERESSES</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <aside>
+        <div class="ad-wisely-bg">
+            <div class="ad-wisely-items">
+                <div>
+                    <img src="/img/img-platform-wisely.svg" alt="Plataforma Wisely">
+                </div>
+
+                <div class="ad-info">
+                    <span class="eyebrown">Plataforma Wisely</span>
+                    <h2>Métricas e insights para você vender mais no seu ecommerce</h2>
+                    <p>A plataforma que auxilia na tomada de ações inteligentes e análises sempre detalhadas.</p>
+                    <a href="https://wisely.pro" target="_blank" id="cta-wisely" class="cta-wisely">Conheça a Wisely</a>
+                    <!-- <button id="cta-wisely" class="cta-wisely" type="button">Faça um teste gratuito</button> -->
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <footer class="footer-items container">
+        <div class="signature">
+            <img src="/img/Logo-footer.svg" alt="Logo">
+            <span>© 2021 TestianoJr by Wisely.</span>
+        </div>
+        <div class="social-media">
+            <a href="https://www.instagram.com/wiselybr/" target="_blank"><img src="/img/insta-wisely.svg" alt="Instagram Wisely"></a>
+            <a href="https://www.youtube.com/channel/UCpL87AU6r_l2gUCE6s05t-w" target="_blank"><img src="/img/youtube-wisely.svg" alt="Youtube Wisely"></a>
+            <a href="https://www.facebook.com/wisely.br" target="_blank"><img src="/img/facebook-wisely.svg" alt="Facebook Wisely"></a>
+        </div>
+
+    </footer>
+
+    <div style="display: none;">
+        <div id="popover-positive">
+            <div class="popover popover-positive">
+                <h3>Público Bom</h3>
+                <p>Entre 5.000 e 50.000 pessoas</p>
+            </div>
+        </div>
+        <div id="popover-neutral">
+            <div class="popover popover-neutral">
+                <h3>Atenção</h3>
+                <p>Entre 50.001 e 199.999 pessoas</p>
+            </div>
+        </div>
+        <div id="popover-negative">
+            <div class="popover popover-negative">
+                <h3>Público Ruim</h3>
+                <p>Acima de 200.000 pessoas e abaixo de 5.000 pessoas</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+        // With the above scripts loaded, you can call `tippy()` with a CSS
+        // selector and a `content` prop:
+
+        tippy('.tag-audience.positive', {
+            content: document.getElementById('popover-positive').innerHTML,
+            allowHTML: true,
+            placement: 'top',
+        });
+
+        tippy('.tag-audience.neutral', {
+            content: document.getElementById('popover-neutral').innerHTML,
+            allowHTML: true,
+            placement: 'top',
+        });
+
+        tippy('.tag-audience.negative', {
+            content: document.getElementById('popover-negative').innerHTML,
+            allowHTML: true,
+            placement: 'top',
+        });
+
+    </script>
+</body>
+
+</html>

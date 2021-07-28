@@ -1,0 +1,64 @@
+<svg width="592" height="327" viewBox="0 0 592 327" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="298.653" cy="162.653" r="161.653" stroke="url(#paint0_linear)" stroke-width="2"/>
+<circle cx="298.653" cy="162.653" r="104.017" transform="rotate(15 298.653 162.653)" stroke="url(#paint1_linear)" stroke-width="2"/>
+<circle cx="348.753" cy="71.3367" r="6.81518" fill="white" stroke="#C3DCFF" stroke-width="2"/>
+<circle cx="151.419" cy="96.7358" r="6.81518" fill="white" stroke="#C3DCFF" stroke-width="2"/>
+<circle cx="578.323" cy="145.119" r="1.9538" fill="#C3DCFF"/>
+<circle cx="578.323" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="578.323" cy="168.564" r="1.9538" fill="#C3DCFF"/>
+<circle cx="566.601" cy="145.119" r="1.9538" fill="#C3DCFF"/>
+<circle cx="566.601" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="566.601" cy="168.564" r="1.9538" fill="#C3DCFF"/>
+<circle cx="554.878" cy="145.119" r="1.9538" fill="#C3DCFF"/>
+<circle cx="554.878" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="554.878" cy="168.564" r="1.9538" fill="#C3DCFF"/>
+<circle cx="543.155" cy="145.119" r="1.9538" fill="#C3DCFF"/>
+<circle cx="543.155" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="543.155" cy="168.564" r="1.9538" fill="#C3DCFF"/>
+<circle cx="531.432" cy="145.119" r="1.9538" fill="#C3DCFF"/>
+<circle cx="531.432" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="531.432" cy="168.564" r="1.9538" fill="#C3DCFF"/>
+<circle cx="519.71" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="519.71" cy="168.564" r="1.9538" fill="#C3DCFF"/>
+<circle cx="507.987" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="507.987" cy="168.564" r="1.9538" fill="#C3DCFF"/>
+<circle cx="496.264" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="484.541" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="590.046" cy="145.119" r="1.9538" fill="#C3DCFF"/>
+<circle cx="590.046" cy="156.841" r="1.9538" fill="#C3DCFF"/>
+<circle cx="590.046" cy="168.564" r="1.9538" fill="#C3DCFF"/>
+<circle cx="95.736" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<circle cx="84.0134" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<circle cx="84.0134" cy="129.488" r="1.9538" fill="#C3DCFF"/>
+<circle cx="72.2902" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<circle cx="72.2902" cy="129.488" r="1.9538" fill="#C3DCFF"/>
+<circle cx="60.5676" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<circle cx="60.5676" cy="129.488" r="1.9538" fill="#C3DCFF"/>
+<circle cx="60.5676" cy="141.211" r="1.9538" fill="#C3DCFF"/>
+<circle cx="48.8449" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<circle cx="48.8449" cy="129.488" r="1.9538" fill="#C3DCFF"/>
+<circle cx="48.8449" cy="141.211" r="1.9538" fill="#C3DCFF"/>
+<circle cx="37.1223" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<circle cx="37.1223" cy="129.488" r="1.9538" fill="#C3DCFF"/>
+<circle cx="37.1223" cy="141.211" r="1.9538" fill="#C3DCFF"/>
+<circle cx="25.3991" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<circle cx="25.3991" cy="129.488" r="1.9538" fill="#C3DCFF"/>
+<circle cx="25.3991" cy="141.211" r="1.9538" fill="#C3DCFF"/>
+<circle cx="13.6765" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<circle cx="13.6765" cy="129.488" r="1.9538" fill="#C3DCFF"/>
+<circle cx="13.6765" cy="141.211" r="1.9538" fill="#C3DCFF"/>
+<circle cx="1.9538" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<circle cx="1.9538" cy="129.488" r="1.9538" fill="#C3DCFF"/>
+<circle cx="1.9538" cy="141.211" r="1.9538" fill="#C3DCFF"/>
+<circle cx="107.459" cy="117.766" r="1.9538" fill="#C3DCFF"/>
+<defs>
+<linearGradient id="paint0_linear" x1="298.653" y1="0" x2="299" y2="211.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C3DCFF"/>
+<stop offset="1" stop-color="#D3DCE6" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="298.653" y1="57.6368" x2="298.877" y2="194.191" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C3DCFF"/>
+<stop offset="1" stop-color="#D3DCE6" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
