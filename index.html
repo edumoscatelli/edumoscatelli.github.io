@@ -11,13 +11,6 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.9.1/jquery.tablesorter.min.js">
         </script>
-
-    <script>
-        $(function () {
-            $('#interest-table').tablesorter();
-        });
-
-    </script>
 </head>
 
 <body>
@@ -28,8 +21,8 @@
             </div>
             <h1>Descubra infinitos interesses para segmentar a sua audiência no FacebookAds.</h1>
             <div class="group-find">
-                <input id="field-find" class="field-find" type="search" placeholder="Digite o interesse...">
-                <button id="btn-find" class="btn-find" type="button" autofocus>Explorar</button>
+                <input id="field-find" class="field-find" type="search" placeholder="Digite o interesse..." autofocus>
+                <button id="btn-find" class="btn-find" type="button">Explorar</button>
 
             </div>
         </section>
@@ -110,11 +103,18 @@
                     <h2>Métricas e insights para você vender mais no seu ecommerce</h2>
                     <p>A plataforma que auxilia na tomada de ações inteligentes e análises sempre detalhadas.</p>
                     <a href="https://wisely.pro" target="_blank" id="cta-wisely" class="cta-wisely">Conheça a Wisely</a>
-                    <!-- <button id="cta-wisely" class="cta-wisely" type="button">Faça um teste gratuito</button> -->
                 </div>
             </div>
         </div>
     </aside>
+
+    <!-- Links Modais - APENAS PARA VISUALIZAÇÃO -->
+    <div style="display:flex; gap: 32px;justify-content: center; margin-bottom: 40px;">
+        <p>Links Modais - APENAS PARA VISUALIZAÇÃO</p>
+        <button id="btn-modal1" type="button">Modal1</button>
+        <button id="btn-modal2" type="button">Modal2</button>
+        <button id="btn-modal3" type="button">Modal3</button>
+    </div>
 
     <footer class="footer-items container">
         <div class="signature">
@@ -132,6 +132,7 @@
 
     </footer>
 
+    <!-- Tooltips Section -->
     <div style="display: none;">
         <div id="popover-positive">
             <div class="popover popover-positive">
@@ -153,12 +154,108 @@
         </div>
     </div>
 
+    <!-- Modal Section -->
+    <!-- Modal-Locked -->
+    <div class="bg-modal">
+        <div class="modal-contents">
+            <div class="close">+</div>
+            <div>
+                <img src="/img/modal-lock.svg" alt="Cadeado">
+                <h2>Lorem ipsum dolor sit</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit</p>
+                <form id="form-lead-capture" action="" class="form-lead">
+                    <input type="email" name="email" id="field-email" class="field-find" placeholder="Seu melhor email"
+                        autofocus>
+                    <input id="btn-submit" type="submit" class="btn-find" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Feedback Check your email-->
+    <div id="modal2" class="modal2 bg-modal">
+        <div class="modal-contents">
+            <div class="close">+</div>
+            <div>
+                <img src="/img/moda-email.svg" alt="Verifique seu Email">
+                <h2>Verifique seu email.</h2>
+                <p>Você irá receber um link que te dará acesso ilimitado a nossa ferramenta gratuitamente</p>
+                <button id="btn-ok" class="btn-loadmore">OK, VOU LÁ VER</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal After receiving email-->
+    <div id="modal3" class="modal3 bg-modal">
+        <div class="modal-contents">
+            <div class="close">+</div>
+            <div>
+                <img src="/img/modal-unlocked.svg" alt="Explore Interesses Ilimitados">
+                <h2>Tudo liberado!</h2>
+                <p>Muito obrigado! Agora você pode pesquisar infinitos interesses gratuitamente!</p>
+                <button id="btn-go" class="btn-loadmore">OK, MÃOS À OBRA</button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script>
-        // With the above scripts loaded, you can call `tippy()` with a CSS
-        // selector and a `content` prop:
 
+        //Sorting Table
+        $(function () {
+            $('#interest-table').tablesorter();
+        });
+
+        //Modal2 - Click btn-ok
+        document.getElementById('btn-ok').addEventListener("click", function () {
+            document.querySelector('.modal2.bg-modal').style.display = "none";
+            document.querySelector('body').style.overflow = "visible";
+        });
+
+        //Modal3 - Click btn-ok
+        document.getElementById('btn-go').addEventListener("click", function () {
+            document.querySelector('.modal3.bg-modal').style.display = "none";
+            document.querySelector('body').style.overflow = "visible";
+        });
+
+
+        //Showing Modal - APENAS PARA VISUALIZAÇÃO - EXCLUIR
+        //Modal Lead Capture
+        document.getElementById('btn-modal1').addEventListener("click", function () {
+            document.querySelector('.bg-modal').style.display = "flex";
+            document.getElementById('field-email').focus();
+            document.querySelector('body').style.overflow = "hidden";
+        });
+
+        document.querySelector('.close').addEventListener("click", function () {
+            document.querySelector('.bg-modal').style.display = "none";
+            document.querySelector('body').style.overflow = "visible";
+        });
+
+        //Modal Feedback Check your email
+        document.getElementById('btn-modal2').addEventListener("click", function () {
+            document.querySelector('.modal2.bg-modal').style.display = "flex";
+            document.getElementById('btn-submit').focus();
+            document.querySelector('body').style.overflow = "hidden";
+        });
+
+        document.querySelector('.modal2.bg-modal .modal-contents .close').addEventListener("click", function () {
+            document.querySelector('.modal2.bg-modal').style.display = "none";
+            document.querySelector('body').style.overflow = "visible";
+        });
+
+        //Modal After receiving email
+        document.getElementById('btn-modal3').addEventListener("click", function () {
+            document.querySelector('.modal3.bg-modal').style.display = "flex";
+            document.querySelector('body').style.overflow = "hidden";
+        });
+
+        document.querySelector('.modal3.bg-modal .modal-contents .close').addEventListener("click", function () {
+            document.querySelector('.modal3.bg-modal').style.display = "none";
+            document.querySelector('body').style.overflow = "visible";
+        });
+        //FIM Showing Modal - APENAS PARA VISUALIZAÇÃO - EXCLUIR
+
+        //Tooltips
         tippy('.tag-audience.positive', {
             content: document.getElementById('popover-positive').innerHTML,
             allowHTML: true,
