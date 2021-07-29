@@ -99,7 +99,6 @@ p {
 }
 
 /*TABLE -------------------------------*/
-
 table {
     width: 864px;
     border: 1px solid #D3DCE6;
@@ -137,7 +136,6 @@ table span {
 }
 
 /* Arrows */
-
 table th span:after,
 table th span:before {
     border: 0.40rem solid transparent;
@@ -323,7 +321,6 @@ tfoot td:nth-child(1) {
 /*Popover Styling ------------*/
 
 /*Headings*/
-
 .popover-positive h3 {
     color: #22CE8B;
 }
@@ -337,7 +334,6 @@ tfoot td:nth-child(1) {
 }
 
 /*base popover*/
-
 .popover {
     padding: 8px;
     max-width: 240px;
@@ -352,7 +348,6 @@ tfoot td:nth-child(1) {
 /*Fim Popover Styling ----------*/
 
 /*Anúncio Wisely ---------------*/
-
 .ad-wisely-bg {
     background: linear-gradient(243.1deg, #17BAF7 -16.58%, #A000FF 71.35%);
     border-radius: 8px;
@@ -425,7 +420,7 @@ tfoot td:nth-child(1) {
     cursor: pointer;
 }
 
-.cta-wisely:hover{
+.cta-wisely:hover {
     background-color: #FAF4F4;
     color: #0053CC;
 }
@@ -433,7 +428,6 @@ tfoot td:nth-child(1) {
 /*Fim anúncio Wisely -----------*/
 
 /* Footer ----------------------*/
-
 .footer-items {
     display: flex;
     flex-flow: row wrap;
@@ -459,8 +453,73 @@ tfoot td:nth-child(1) {
     display: flex;
     gap: 24px;
 }
-
 /* Fim Footer -----------------*/
+
+/* Modais --------------------*/
+.bg-modal {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background: linear-gradient(0deg, rgba(71, 83, 98, 0.4), rgba(71, 83, 98, 0.4));
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.modal-contents {
+    height: 408px;
+    width: 628px;
+    background: white url("/img/modal-dots-pattern.svg") no-repeat 0 16% / contain;
+    text-align: center;
+    padding: 48px;
+    position: relative;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contents p{
+  margin: 8px auto 0 auto;
+  width: 70%;
+
+}
+.modal-contents h2{
+    margin-top: 8px;
+    font-size: 2rem;
+}
+
+.form-lead{
+    padding-top: 16px;
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 42px;
+    color: #333;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #666;
+}
+
+#btn-ok, #btn-go{
+    margin-top: 16px;
+}
+
+/* Fim Modais ---------------*/
 
 @media only screen and (max-device-width: 960px) {
     /*Hero --------------*/
@@ -571,4 +630,30 @@ tfoot td:nth-child(1) {
         gap: 48px;
     }
     /* Fim Footer --------------------*/
+    
+    /*Modal -------------------------*/
+    .modal-contents {
+        margin: 24px;
+        height: fit-content;
+        width: 100%;
+        padding: 48px 24px;
+
+    }
+    .modal-contents h2{
+        font-size: 1.2rem;
+    }
+    
+    .modal-contents p{
+      width: 80%;
+    
+    }
+    .modal-contents h2{
+        margin-top: 8px;
+        font-size: 1.5rem;
+    }
+    .form-lead{
+        flex-direction: column;
+    }
+
+    /*Fim Modal ---------------------*/
 }
